@@ -13,20 +13,26 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
- Route::get('/', function () {
-    return view('welcome'); 
+ Route::get('/tentang', function () {
+    return view('tentang');
 /*    Route::get('/', function () {
         return "HAI"; */
+});
 
- Route::get('/', function () {
+ Route::get('/front', function () {
         return view('front'); 
  /*    Route::get('/', function () {
 return "HAI"; */
  });
                                                 
-Route::get('/', function () {
+Route::get('/after', function () {
 return view('after'); 
  /*    Route::get('/', function () {
         return "HAI"; */
  });
-});
+
+ Route::get('/', function () {
+        return view('welcome'); 
+         /*    Route::get('/', function () {
+                return "HAI"; */
+         });
